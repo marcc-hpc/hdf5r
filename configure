@@ -3977,10 +3977,10 @@ x$ax_compare_version_B" | sed 's/^ *//' | sort -r | sed "s/x${ax_compare_version
 
 
 
-    if test "$ax_compare_version" = "true" ; then
-    hdf5_version_sufficient="yes"
-    else as_fn_error $? "The version of hdf5 installed on your system is not sufficient. Please ensure that at least version 1.8.13 is installed" "$LINENO" 5
-  fi
+  #  if test "$ax_compare_version" = "true" ; then
+  #  hdf5_version_sufficient="yes"
+  #  else as_fn_error $? "The version of hdf5 installed on your system is not sufficient. Please ensure that at least version 1.8.13 is installed" "$LINENO" 5
+  #fi
 
 else
   as_fn_error $? "hdf5 does not seem to be installed on your platform.
