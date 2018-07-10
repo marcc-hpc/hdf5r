@@ -3694,6 +3694,9 @@ HDF5 support is being disabled (equivalent to --with-hdf5=no).
             | $GREP 'Installation point:' \
             | $AWK '{print $NF}' )
 
+                HDF5_CC='gcc'
+		HDF5_VERSION='1.10.2'
+		
                 HDF5_CPPFLAGS="-I${HDF5_tmp_inst}/include"
 
                 for arg in $HDF5_SHOW $HDF5_tmp_flags ; do
